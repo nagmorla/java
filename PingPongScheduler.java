@@ -53,9 +53,6 @@ public class PingPongScheduler {
             playersTimings[i][0] = startingHr;
             playersTimings[i][1] = endingHr;
         }
-//        Arrays.sort(playersTimings, (a, b) -> Integer.compare(a[0], b[0]));
-
-//        System.out.println("Player Timings::" + Arrays.toString(playersTimings));
         Arrays.asList(playersTimings).forEach(val -> System.out.print("{" + val[0] + " -- " + val[1] + "}, "));
         incrementHoursV4(playersTimings);
 

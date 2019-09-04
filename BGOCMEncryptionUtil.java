@@ -23,7 +23,7 @@ public class BGOCMEncryptionUtil {
      * @throws Exception
      */
     private SecretKey getKey() throws Exception {
-        String strSaltKey = "OimSupportKeyForBGOCMApp";
+        String strSaltKey = "SipSupportKeyForBGOCMApp";
         byte[] arrayBytes = strSaltKey.getBytes(UNICODE_FORMAT);
         KeySpec objKeySpec = new DESedeKeySpec(arrayBytes);
         SecretKeyFactory skf = SecretKeyFactory.getInstance(DESEDE_ENCRYPTION_SCHEME);
